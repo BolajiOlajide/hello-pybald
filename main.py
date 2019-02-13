@@ -3,8 +3,11 @@ from pybald import context
 from pybald.core.controllers import Controller, action
 from pybald.core.router import Router
 
+from config import config
+
+
 # configure our pybald application
-pybald.configure(debug=True)
+pybald.configure(config_object=config)
 
 
 def map(urls):
